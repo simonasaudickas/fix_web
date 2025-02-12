@@ -13,7 +13,7 @@ from sqlalchemy import text
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine('postgresql://postgres:Svedas1983@localhost:5432/postgres')
+engine = create_engine('postgresql://postgres:[]@localhost:5432/postgres')
 conn= engine.connect()
 
 def get_products():
@@ -46,7 +46,7 @@ def products(request):
 
 
 def product_detail(request, id):
-    DATABASE_URL = "postgresql://postgres:Svedas1983@localhost:5432/postgres"
+    DATABASE_URL = "postgresql://postgres:[]@localhost:5432/postgres"
     # Create engine
     engine = create_engine(DATABASE_URL)
     # Create a session
