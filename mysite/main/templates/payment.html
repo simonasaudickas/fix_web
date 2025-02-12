@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%block main%}
+{% load static %}
+<div class="container">
+    <div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/61wWDd92ZnL._AC_SL1001_.jpg" class="card-img-top" alt="sudelis">
+  <div class="card-body">
+    <h5 class="card-title">{{desc}}</h5>
+
+    <p class="card-text">{{item_desc}}</p>
+      <h3>Kaina:{{amount}} {{cur}}</h3>
+
+
+<form action="{% url 'payment' %}" method="POST">
+    {% csrf_token %}
+
+    <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="{{pub_key}}"
+        data-amount="{{but}}"
+        data-name="{{desc}}"
+        data-description="{{desc}}"
+        data-currency="{{cur}}">
+    </script>
+</form>
+ </div>
+</div>
+
+      <section>
+       <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<!--<stripe-buy-button
+  buy-button-id="buy_btn_1NNE28LRzT0sObBKkkQSw5OM"
+  publishable-key="pk_test_0YtMnhjOf1eQfJtISfJ99YXC">
+
+</stripe-buy-button> -->
+    </section>
+
+</div>
+{%endblock main%}
+
+<!--src="https://checkout.stripe.com/checkout.js"-->

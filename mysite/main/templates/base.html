@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Smulkių remonto darbų meistų puslapis">
+    <meta name="author" content="">
+    <meta name="keywords" content="šildymas, vėdinimas, grindų klojimas">
+
+    <title>FIX JOB</title>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SJPXVXTSE"></script>
+    <script async defer data-website-id="6683e426-a07e-4613-a803-236c6dac84d8" src="http://78.56.90.171:3000/umami.js"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9SJPXVXTSE');
+	</script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <link rel="shortcut icon" href="/static/icons/favicon.png" type="image/x-icon">
+	<style>
+    /* Custom CSS to adjust row height */
+    .custom-row {
+
+  padding: 50px 0;
+  text-align: center;
+  background-color: #ffc527;
+}
+
+  </style>
+
+</head>
+
+<body style="font-family: Roboto Slab;">
+<!--<div class = "container-md bg-dark">
+    <div class="row" align="center">
+        <div class="col">
+            <a class="navbar-brand" href="tel:+37060237703">
+                 <img src="/static/icons/worker.png" style="width:30px;height:30px"class="d-inline-block align-text-top">
+     +370 602 37703
+    </a>
+        </div>
+        <div class="col">
+            <p style="color:#ffc527;">mbfixjob@gmail.com</p>
+        </div>
+        <div class="col">
+        </div>
+
+</div>
+    </div>
+    <div class="sticky-md-top">
+    <div class="row" >
+        <p style="color:blue;" align="center">Stick to the top on viewports sized MD (medium) or wider</p></div></div>
+-->
+<div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Pradžia
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="/paslaugos/">Paslaugos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Atlikti darbai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products/all">Įrankiai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Kontaktai</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<div class="container-md">
+<div class="p-0 text-white text-left" style="background-color:#ffc527">
+    <div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col-4">
+      <img src="/static/Fix_Job.png" alt="FixJob logotipas" height="250px" >
+
+    </div>
+
+        </div>
+      </div>
+</div>
+        </div>
+
+<br>
+        <!-- Navigation -->
+
+  <!-- Page Content -->
+<div class="container-md">
+
+
+          {%block main%}
+
+
+          {%endblock main%}
+
+        </div>
+
+<hr><br>
+<!--Footer section -->
+    <footer id="colophon" class="site-footer" role="contentinfo" style ="text-color:grey">
+        <div id="footer-widgets" class="footer-widgets section-padding ">
+			<div class="container">
+                <div class="row">
+                    <div id="footer-1" class="col-md-4 col-sm-12 footer-column widget-area sidebar" role="complementary">
+                        <aside id="text-2" class="footer-widget widget widget_text"><h2 class="widget-title">Apie mus</h2>
+                            <div class="textwidget">
+                                <p>Mūsų vizija — nei vienas darbas nėra<br>
+                                    per mažas.</p>
+                                <p><a href="/#"></a><br>
+                                <a href="#"></a><br>
+                                <a href="#"></a></p>
+                            </div>
+		                </aside>
+                    </div>
+                    <div id="footer-2" class="col-md-4 col-sm-12 footer-column widget-area sidebar" role="complementary">
+                        <aside id="custom_html-2" class="widget_text footer-widget widget widget_custom_html">
+                        <h2 class="widget-title">Kontaktai</h2>
+                        <div class="textwidget custom-html-widget">
+                            <p>MB Fix Job</p>
+                            <p>Į/k: 306375864</p>
+                            <p>
+                                <a href="tel:+37060237703" class="cont">+370 602 37703</a><br>
+                                <a class="cont" href="mailto:">mbfixjob@gmail.com</a>
+                            </p>
+                        </div>
+                        </aside>
+                    </div>
+                    <div id="footer-3" class="col-md-4 col-sm-12 footer-column widget-area sidebar" role="complementary">
+                        <aside id="nav_menu-2" class="footer-widget widget widget_nav_menu">
+                            <h2 class="widget-title">Veiklos sritys</h2>
+                            <div class="menu-veiklos-sritys-container">
+                                <ul id="menu-veiklos-sritys" class="menu">
+                                    <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189">
+                                        <a href="/">Elektra</a>
+                                    </li>
+                                    <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
+                                        <a href="/">Santechnika</a>
+                                    </li>
+                                    <li id="menu-item-191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191">
+                                        <a href="/">Šildymas/Šaldymas/Vėdinimas</a>
+                                    </li>
+                                    <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191">
+                                        <a href="/">Siuvimas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+				</div>
+			</div>
+
+
+		<!-- .site-info -->
+
+	</footer>
+
+
+<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SJPXVXTSE"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9SJPXVXTSE');
+	</script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

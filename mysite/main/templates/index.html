@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+{%block main%}
+
+
+<style type="text/css">
+.bgimg {
+    background-image: url('/static/intro-section-pattern.png');
+}
+
+	paslaugos {height: 600px; }
+
+</style>
+
+<div class="bgimg">
+    <div class="row">
+        <div class="col" align="center">
+            <img src="/static/title-img.webp" alt="Service" >
+        </div>
+    </div>
+    <br>
+    <h1 align="center">Vienas skambutis gali išpręsti Jūsų namų problemas</h1>
+    <br>
+    <h1 align="center">+370 602 37703</h1>
+    <br>
+    <br>
+    <hr>
+</div>
+<div class="container">
+    <br>
+    <h2 align="center">Mūsų teikiamos paslaugos</h2>
+    <p align="center" style="color:gray">Žemiau pateikiamos paslaugų grupės, kuriose mes galime jums padėti.</p>
+</div>
+<br>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-4">
+            <h4 align="center" >Santechnikos darbai</h4>
+            <img src="/static/vonios_darbai.jpg" alt="Vonios darbai" width="100%" height="250px">
+        </div>
+         <div class="col-sm-4">
+            <h4 align="center" >Šildymas/Vėdinimas</h4>
+            <img src="/static/kondicionavimas.jpg" alt="Kondicionavimas" width="100%" height="250px">
+        </div>
+        <div class="col-sm-4">
+            <h4 align="center">Staliaus darbai</h4>
+            <img src="/static/staliaus_darbai.jpg" alt="Staliaus darbai" width="100%" height="250px"  >
+        </div>
+        </div>
+    <br>
+    <div class="row justify-content-md-center">
+         <div class="col-sm">
+             <h4 align="center">Stogo darbai</h4>
+             <img src="/static/stogo_darbai.jpg" alt="Stogo darbai" width="100%" height="250px">
+
+         </div>
+         <div class="col-sm">
+             <h4 align="center">Grindų klojimas</h4>
+             <a href="{% url 'grindys'%}" target="_blank"><img src="/static/grindu.jpg" alt="Grindų darbai" width="100%" height="250px"></a>
+         </div>
+        <div class="col-sm">
+             <h4 align="center">Smulkūs remonto darbai</h4>
+            <img src="/static/smulkus_remontas.jpg" alt="Remonto darbai" width="100%" height="250px">
+         </div>
+
+    </div>
+    </div>
+
+<br>
+<hr>
+
+</div>
+
+</br>
+<div class="row custom-row" >
+        <div class="col">
+            <h2 align="center">Mumis pasitiki</h2>
+        </div></div><hr>
+<div class="container">
+            <div class="row">
+            <div class="col-3">
+            <img src="https://rekvizitai.vz.lt/logos/forma_perfecta-322862-580.jpg" title="Forma perfecta" alt="Forma perfecta" />
+
+            </div>
+            <div class="col-3">
+                <img src="https://rekvizitai.vz.lt/logos/uab_gitoma-151330-465.jpg" title="Gitoma" alt="Gitoma" />
+            </div>
+            <div class="col-3">
+                <img src="https://rekvizitai.vz.lt/logos/mcdonalds_restaurants_uab-35592-473.jpg" title="Premier Restaurants" alt="McDonald's" />
+            </div>
+            </div>
+        </div>
+</div>
+</div>
+<hr>
+
+    <div class="row custom-row" >
+        <div class="col">
+            <h2 align="center">Bendradarbiaujame su</h2>
+        </div>
+    </div><hr>
+<div class="container">
+            <div class="row">
+            <a target="_blank" href="https://www.vevor.com/?utm_source=inhouse&utm_medium=affiliate&utm_campaign=76392967&shortkey=20231121fyuy" >
+            <img src="https://adsimg.vevorstatic.com/upload/vevor/activity/20230906/993BF50CD5FFA0694A293A8A60124C43.jpg" title="VEVOR LOGO" alt="VEVOR LOGO" />
+    <br/>VEVOR LOGO</a>
+            </div></div>
+
+{%endblock main%}

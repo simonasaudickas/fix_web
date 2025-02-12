@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+   <div class="container">
+    <div class="row">
+        {% for row in items %}
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="{{ row.image}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ row.Name|safe|slice:":50" }}</h5>
+                        <h3 style="font-weight: bold">Kaina: {{ row.Sales }} €</h3>
+
+               <a href="{% url 'detail' row.ID%}" class="btn btn-primary">Pirkti</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <br>
+    </div>
+       <br>
+    <div class="pagination" >
+        <span class="step-links">
+            {% if items.has_previous %}
+                <a href="?page=1">&laquo; Pirmas</a>
+                <a href="?page={{ items.previous_page_number }}"><<</a>
+            {% endif %}
+
+            <span class="current">
+                Puslapis {{ items.number }} iš {{ items.paginator.num_pages }}.
+            </span>
+
+            {% if items.has_next %}
+                <a href="?page={{ items.next_page_number }}">>></a>
+                <a href="?page={{ items.paginator.num_pages }}">Paskutinis &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+
+{% endblock main %}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%if request.user.is_authenticated %}
+
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Vartotojo meniu</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="{% url 'profilis'%}">Profilis</a>
+                          <a class="dropdown-item" href="{% url 'logout'%}">Atsijungti</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </li>
+                    {% else %}
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Paskyra</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="/members/register/">Registruotis</a>
+                          <a class="dropdown-item" href="/members/login/">Prisijungti</a>
+
+                        </div>
+                      </li>
+            {%endif%}
+
+</body>
+</html>
